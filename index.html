@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glory Fitness</title>
+</head>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* css reset */
+    body {
+        font-family: 'Goldman', cursive;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/bg.jpg');
+        height: 3000px;
+    }
+
+    .left {
+        position: absolute;
+        left: 34px;
+        top: 30px;
+        display: inline-block;
+        /* border: 2px solid red;  */
+    }
+
+    .left img {
+        width: 277px;
+        filter: invert(100%);
+        border-radius: 10px;
+    }
+
+    .left div {
+        text-align: center;
+        font-weight: bold;
+        font-size: 25px;
+    }
+
+    .mid {
+       
+        display: block;
+        width: 33%;
+        margin: 30px auto;
+        /* border: 2px solid rgb(0, 255, 42);  */
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 30px;
+        display: inline-block;
+        /* border: 2px solid rgb(132, 0, 255);  */
+    }
+
+    .btn {
+        font-family: 'Goldman', cursive;
+        margin: 0px 13px;
+        padding: 6px 18px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 14px;
+    }
+
+    .btn:hover {
+        background-color: rgb(87, 73, 73);
+        color: white;
+    }
+
+    .navbar {
+        display: inline;
+    }
+
+    .navbar li {
+        color: white;
+        display: inline;
+    }
+
+    .navbar li a {
+        
+        color: white;
+        text-decoration: none;
+        padding: 16px;
+        font-size: 20px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a:active {
+        text-decoration: underline;
+        color: grey;
+    }
+
+    .container {
+        border: 2px solid;
+        margin: 156px 40px;
+        padding: 75px;
+        width: 33%;
+        border-radius: 10px;
+    }
+
+    .formgroup input {
+        text-align: center;
+        display: block;
+        width: 366px;
+        padding: 1px;
+        border: 2px solid burlywood;
+        margin: 11px auto;
+        border-radius: 10px;
+        font-size: 25px;
+        font-family: 'Goldman', cursive;
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        width: 33%;
+        margin: 22px auto;
+        background-color: black;
+        color: white;
+        font-size: 23px;
+    }
+</style>
+
+<body>
+    <header class="header">
+
+        <!-- left box for logo  -->
+        <div class="left">
+            <img src="img/logo2.jpg" alt="logo">
+            <div>Glory Fitness</div>
+        </div>
+        <!-- mid box for navigation  -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons  -->
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Bangalore Now</h1>
+        <form action="noaction.py">
+            <div class="formgroup">
+                <div><input type="text" id="" placeholder="Enter your Name"></div>
+                <div><input type="text" id="" placeholder="Enter your Age"></div>
+                <div><input type="text" id="" placeholder="Enter your Email"></div>
+                <div><input type="text" id="" placeholder="Enter your Number"></div>
+
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
